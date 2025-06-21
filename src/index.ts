@@ -1,2 +1,2 @@
-export * from "./generate-tocmdx"
-export * from "./useActiveHeading"
+export * from "./generate-tocmdx";
+export * from "./useActiveHeading";
