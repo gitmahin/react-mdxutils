@@ -23,8 +23,8 @@ jobs:
       - name: Check version & Compare
         id: check-version
         run: |
-          echo "PACKAGE_NAME=$(node -p "require('./package.json').name")"
-          echo "CURRENT_VERSION=$(node -p "require('./package.json').version")"
+          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
           git fetch --tags
           git tag
           LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
