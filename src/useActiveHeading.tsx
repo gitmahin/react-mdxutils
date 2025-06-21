@@ -17,7 +17,7 @@ export const useActiveHeading = (content: string) => {
         activeIndicatorRef.current!.style.left = `${btn.offsetLeft}px`;
       });
     },
-    [activeHeading]
+    []
   );
 
   const handleHashChange = () => {
