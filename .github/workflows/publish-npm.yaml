@@ -25,11 +25,11 @@ jobs:
           echo "PACKAGE_NAME=$(node -p "require('./package.json').name")"
           echo "CURRENT_VERSION=$(node -p "require('./package.json').version")"
           echo "LATEST_TAG=$(
-                { git describe --tags --abbrev=0 2>/dev/null || npm view "$PACKAGE_NAME" version 2>/dev/null || echo "v0.0.0" }
+                { git describe --tags --abbrev=0 2>/dev/null || npm view "$PACKAGE_NAME" version 2>/dev/null || echo "v0.0.0"; }
            )"
           LATEST_VERSION = ${LATEST_TAG#v}
 
-          if [ "$CURRENT_VERSION" != "$LATEST_VERSION"]; then
+          if [ "$CURRENT_VERSION" != "$LATEST_VERSION" ]; then
                 echo "version_changed=true" >> $GITHUB_OUTPUT
                 echo "new_version=$CURRENT_VERSION" >> $GITHUB_OUTPUT
                 echo "Version changed from $LATEST_VERSION to $CURRENT_VERSION"
@@ -49,7 +49,7 @@ jobs:
         run: npm publish --access public --no-git-checks
         env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-            
+
       - name: Push Git Tag
         if: steps.check-version.outputs.version_changed == 'true'
         run: |
