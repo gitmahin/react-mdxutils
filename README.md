@@ -114,4 +114,4 @@ asideRef,
 The `useActiveHeading` hook takes content: string as a parameter to ensure its internal logic, specifically the Intersection Observer, is re-initialized and re-attached to the correct heading elements whenever your MDX or Markdown content changes.
 
 ## 🤝 Contributing
-Contributions are welcome! If you find a bug, have a feature request, or want to improve the code, please open an issue or submit a pull request on the [GitHub repository]().
+Contributions are welcome! If you find a bug, have a feature request, or want to improve the code, please open an issue or submit a pull request on the [GitHub repository](https://github.com/gitmahin/react-mdxutils).
