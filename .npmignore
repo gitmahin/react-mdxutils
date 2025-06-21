@@ -1,0 +1,10 @@
+# Ignore source files
+src/
+# Ignore development-related files
+node_modules/
+*.ts
+*.map 
+*.spec.ts
+tsconfig.json
+.git/
+.gitignore
