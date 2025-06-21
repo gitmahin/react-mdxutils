@@ -2,7 +2,7 @@
 src/
 # Ignore development-related files
 node_modules/
-*.ts
+tsup.config.ts
 *.map 
 *.spec.ts
 tsconfig.json
