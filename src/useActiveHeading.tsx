@@ -58,7 +58,6 @@ export const useActiveHeading = (content: string) => {
             );
             const activeId = sorted?.[0]?.target.id;
             if (activeId) {
-              setActiveHeading(`#${activeId}`);
               if (headingListRefs.current) {
                 const activeListElement = headingListRefs.current[
                   activeId
@@ -75,7 +74,7 @@ export const useActiveHeading = (content: string) => {
                   });
                 }
 
-                handleActiveHeading(activeListElement);
+                handleActiveHeading(activeListElement, `#${activeId}`);
               }
             }
           }
