@@ -25,8 +25,6 @@ jobs:
         run: |
           PACKAGE_NAME=$(node -p "require('./package.json').name")
           CURRENT_VERSION=$(node -p "require('./package.json').version")
-          git fetch --tags
-          git tag
           LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
           if [ -z "$LATEST_TAG" ]; then
             LATEST_TAG=$(npm view "$PACKAGE_NAME" version 2>/dev/null || echo "v0.0.0")
