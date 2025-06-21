@@ -9,4 +9,4 @@ tsconfig.json
 .git/
 .gitignore
 .github/
-.eslint.config.mjs
+eslint.config.mjs
