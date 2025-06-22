@@ -29,7 +29,7 @@ npm install react-mdxutils
 This function modify the generated toc using `mdast-util-toc` and returns an array of heading objects, suitable for building a perfect Table of Contents.
 
 ```tsx
-import { generateTocFromMdx } from "mdxutils";
+import { generateTocFromMdx } from "react-mdxutils";
 const toc = generateTocFromMdx(mdxContent);
 
 <ul className="leading-7">
@@ -60,7 +60,7 @@ This hook tracks the currently visible heading in a scrollable area and updates 
 **Example Usage in a React Component**
 
 ```tsx
-import { generateTocFromMdx } from "mdxutils";
+import { generateTocFromMdx } from "react-mdxutils";
 
 const toc = generateTocFromMdx(mdxContent);
 const {
