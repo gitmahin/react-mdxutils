@@ -7,7 +7,7 @@
 
 ## 📦 Installation
 
-You can install `react-mdxutils` using npm or yarn:
+You can install `react-mdxutils` using npm:
 
 ```bash
 npm install react-mdxutils
