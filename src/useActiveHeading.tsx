@@ -20,23 +20,6 @@ export const useActiveHeading = (content: string) => {
     []
   );
 
-  const handleHashChange = () => {
-    setActiveHeading(window.location.hash);
-  };
-
-  useEffect(() => {
-    // Initialize the active hash when the component mounts
-    handleHashChange();
-
-    // Listen for hash change events
-    window.addEventListener("hashchange", handleHashChange);
-
-    return () => {
-      // Cleanup the event listener on unmount
-      window.removeEventListener("hashchange", handleHashChange);
-    };
-  }, []);
-
   useEffect(() => {
     if (!content) return;
 
