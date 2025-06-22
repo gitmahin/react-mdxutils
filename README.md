@@ -10,7 +10,7 @@
 You can install `react-mdxutils` using npm or yarn:
 
 ```bash
-npm install mdxutils
+npm install react-mdxutils
 ```
 
 ## ✨ Features
