@@ -23,6 +23,9 @@
     "remark",
     "slugger"
   ],
+    "files": [
+    "dist/"
+  ],
   "author": "Nimul Islam Mahin nimulmahin@gmail.com",
   "license": "MIT",
   "description": "Utilities for MDX content, including anchor extraction.",
