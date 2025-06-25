@@ -1,6 +1,6 @@
 {
   "name": "react-mdxutils",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -23,7 +23,7 @@
     "remark",
     "slugger"
   ],
-    "files": [
+  "files": [
     "dist/"
   ],
   "author": "Nimul Islam Mahin nimulmahin@gmail.com",
