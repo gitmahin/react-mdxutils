@@ -1,9 +1,7 @@
 name: Publish NPM Package
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -25,7 +23,7 @@ jobs:
         run: |
           PACKAGE_NAME=$(node -p "require('./package.json').name")
           CURRENT_VERSION=$(node -p "require('./package.json').version")
-          echo "::group::Other Version tags"
+          echo "::group::Other Versions"
           git fetch --tags
           git tag
           echo "::endgroup::"
