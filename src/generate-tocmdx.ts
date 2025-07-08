@@ -3,7 +3,7 @@ import remarkParse from "remark-parse";
 import GithubSlugger from "github-slugger";
 import { toc as generateToc } from "mdast-util-toc";
 
-type TocItem = {
+export type TocItem = {
   content: string;
   slug: string;
   level: number;
