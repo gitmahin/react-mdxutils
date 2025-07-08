@@ -5,7 +5,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "tsup --dts --external react --minify",
+    "build": "tsup --format esm,cjs --dts --external react --minify",
     "lint": "eslint . --max-warnings 0",
     "check-types": "tsc --noEmit"
   },
