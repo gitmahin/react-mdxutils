@@ -10,7 +10,6 @@
     "module": "NodeNext",
     "moduleDetection": "force",
     "moduleResolution": "NodeNext",
-    "emitDeclarationOnly": false, 
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
