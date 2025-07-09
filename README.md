@@ -60,7 +60,7 @@ This hook tracks the currently visible heading in a scrollable area and updates 
 **Example Usage in a React Component**
 
 ```tsx
-import { generateTocFromMdx } from "react-mdxutils";
+import { generateTocFromMdx, useActiveHeading } from "react-mdxutils";
 
 const toc = generateTocFromMdx(mdxContent);
 const {
@@ -112,6 +112,16 @@ asideRef,
 
 #### Why content: string is a parameter for `useActiveHeading`:
 The `useActiveHeading` hook takes content: string as a parameter to ensure its internal logic, specifically the Intersection Observer, is re-initialized and re-attached to the correct heading elements whenever your MDX or Markdown content changes.
+
+**Note:** You can pass the generated TOC or even a simple content hash. The goal is to give useEffect something to watch for changes, so it knows when to: Reset observers Recalculate which headings to track.
+
+## 🔠 Type Definitions
+This package exports helpful TypeScript types you can use in your own code.
+### ✅ Available Types
+- `TocItem`
+```tsx
+import type { TocItem } from "react-mdxutils";
+```
 
 ## 🤝 Contributing
 Contributions are welcome! If you find a bug, have a feature request, or want to improve the code, please open an issue or submit a pull request on the [GitHub repository](https://github.com/gitmahin/react-mdxutils).
