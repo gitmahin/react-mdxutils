@@ -4,7 +4,7 @@ export const useActiveHeading = (content: string) => {
   const [activeHeading, setActiveHeading] = useState<string>("");
   const headingListRefs = useRef<{ [key: string]: HTMLElement | null }>({});
   const activeIndicatorRef = useRef<HTMLDivElement | null>(null);
-  const asideRef = useRef<HTMLElement | null>(null);
+  const asideRef = useRef<HTMLUListElement | null>(null);
 
   const handleActiveHeading = useCallback(
     (btn: HTMLElement, hashLink?: string) => {
