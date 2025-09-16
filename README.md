@@ -6,6 +6,7 @@
 `react-mdxutils` is a lightweight and versatile utility package for extracting Table of Contents (TOC) items and a React hook to manage the active heading link based on scroll position.
 
 **See [Live demo](https://tutorial.programmermahin.com/quick-learn/html)**
+![Demo Image](public/image.png)
 
 ## 📦 Installation
 
